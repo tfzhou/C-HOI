@@ -8,7 +8,7 @@ Our proposed method reached the __1st__ place in ICCV-2019 Person in Context Cha
 
 ---
 ## Prerequisites
-Install [mmdetection](https://github.com/open-mmlab/mmdetection) following [INSTALL.md](https://github.com/open-mmlab/mmdetection/blob/v1.0rc0/INSTALL.md).
+Install following [INSTALL.md](https://github.com/open-mmlab/mmdetection/blob/v1.0rc0/INSTALL.md).
 
 ## Prepare Dataset
 Download [PIC v2.0](http://picdataset.com/challenge/dataset/download/) and [HOIW](http://picdataset.com/challenge/dataset/download/).
