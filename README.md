@@ -11,7 +11,7 @@ Our proposed method reached the __1st__ place in ICCV-2019 Person in Context Cha
 This implementation is based on [mmdetection](https://github.com/open-mmlab/mmdetection). Please follow [INSTALL.md](https://github.com/open-mmlab/mmdetection/blob/v1.0rc0/INSTALL.md) for installation.
 
 ## Prepare Dataset
-For now, we only provide pre-trained weights for [PIC v2.0](http://picdataset.com/challenge/dataset/download/) and [HOIW](http://picdataset.com/challenge/dataset/download/) datasets. Please download them first.
+For now, we only provide pre-trained weights for [PIC v2.0](http://picdataset.com/challenge/dataset/download/) and [HOIW](http://picdataset.com/challenge/dataset/download/) datasets. Please download these two datasets first.
 
 ## Download pre-trained weights
 Will be added later.
