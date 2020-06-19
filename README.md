@@ -14,7 +14,7 @@ This implementation is based on [mmdetection](https://github.com/open-mmlab/mmde
 For now, we only provide pre-trained weights for [PIC v2.0](http://picdataset.com/challenge/dataset/download/) and [HOIW](http://picdataset.com/challenge/dataset/download/) datasets. Please download these two datasets first.
 
 ## Download pre-trained weights
-Will be added later.
+[Google Drive](https://drive.google.com/drive/folders/1STX6aad2qxNS4wZkS1G5TuA8tyFqDcGY). Results on PIC and HOIW datasets are also provided.
 
 ## Testing
 
