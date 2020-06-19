@@ -14,14 +14,18 @@ This implementation is based on [mmdetection](https://github.com/open-mmlab/mmde
 For now, we only provide pre-trained weights for [PIC v2.0](http://picdataset.com/challenge/dataset/download/) and [HOIW](http://picdataset.com/challenge/dataset/download/) datasets. Please download these two datasets first.
 
 ## Download pre-trained weights
-[Google Drive](https://drive.google.com/drive/folders/1STX6aad2qxNS4wZkS1G5TuA8tyFqDcGY). Results on PIC and HOIW datasets are also provided.
+Download from [Google Drive](https://drive.google.com/drive/folders/1STX6aad2qxNS4wZkS1G5TuA8tyFqDcGY). 
+
+Results on PIC and HOIW datasets are also provided.
 
 ## Testing
 
 1. Run testing on the validation set of PIC v2.0
+
 ```python tools/test_pic.py configs/pic_v2.0/htc_rel_dconv_c3-c5_mstrain_400_1400_x101_64x4d_fpn_20e_train_rel_dcn_semantichead.py pic_latest.pth --json_out det_result.json```
 
 2. Run testing on the validation set of HOIW
+
 ```python tools/test_hoiw.py configs/hoiw/cascade_rcnn_x101_64x4d_fpn_1x_4gpu_rel.py hoiw_latest.pth --json_out det_result.json --hoiw_out hoiw_result.json```
 
 ## Citation
