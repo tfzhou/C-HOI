@@ -1,0 +1,6 @@
+build/
+data/
+hoiw_latest.pth
+mmdet.egg-info/
+.eggs
+.idea

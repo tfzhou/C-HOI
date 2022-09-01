@@ -127,11 +127,14 @@ class HoiwDataset(CocoDataset):
 
         self.img_ids = self.coco.getImgIds()
         img_infos = []
-        for i in self.img_ids[5000:]:
+        for i in self.img_ids:
             info = self.coco.loadImgs([i])[0]
             info['filename'] = info['file_name']
             if rel_ann_file is not None:
-                info['rel'] = rel_info[info['filename']]
+                if info['filename'] not in rel_info:
+                    print(info['filename'])
+                else:
+                    info['rel'] = rel_info[info['filename']]
             img_infos.append(info)
         return img_infos
 

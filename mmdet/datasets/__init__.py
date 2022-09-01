@@ -10,11 +10,11 @@ from .utils import random_scale, show_ann, to_tensor
 from .voc import VOCDataset
 from .wider_face import WIDERFaceDataset
 from .xml_style import XMLDataset
-from .pic_v10 import PicDataset
+#from .pic_v10 import PicDataset
 from .pic_v20 import PicDatasetV20
 from .vg import VisualGenomeDataset
 from .hoiw import HoiwDataset
-from .vcoco import VCocoDataset
+#from .vcoco import VCocoDataset
 
 __all__ = [
     'CustomDataset', 'XMLDataset', 'CocoDataset', 'VOCDataset',

@@ -38,12 +38,12 @@ class ReldnHead(nn.Module):
         self.freq_bias = FrequencyBias(must_overlap=must_overlap, mode=mode)
             
         self.prd_cls_feats = nn.Sequential(
-            nn.Linear(dim_in, 2048),
+            nn.Linear(dim_in, 1024),
             nn.LeakyReLU(0.1),
-            nn.Linear(2048, 2048),
+            nn.Linear(1024, 1024),
             nn.LeakyReLU(0.1))
         self.prd_cls_scores = nn.Sequential(
-            nn.Linear(2048, num_prd_classes),
+            nn.Linear(1024, num_prd_classes),
             nn.Sigmoid())
         
         if use_spatial_feat:
@@ -58,14 +58,16 @@ class ReldnHead(nn.Module):
         
         if add_so_scores:
             self.prd_sbj_scores = nn.Sequential(
-                nn.Linear(dim_in_final, 1024),
-                nn.LeakyReLU(0.1),
-                nn.Linear(1024, num_prd_classes),
+                nn.Linear(dim_in_final, num_prd_classes),
+                # nn.Linear(dim_in_final, 1024),
+                # nn.LeakyReLU(0.1),
+                # nn.Linear(1024, num_prd_classes),
                 nn.Sigmoid())
             self.prd_obj_scores = nn.Sequential(
-                nn.Linear(dim_in_final, 1024),
-                nn.LeakyReLU(0.1),
-                nn.Linear(1024, num_prd_classes),
+                nn.Linear(dim_in_final, num_prd_classes),
+                # nn.Linear(dim_in_final, 1024),
+                # nn.LeakyReLU(0.1),
+                # nn.Linear(1024, num_prd_classes),
                 nn.Sigmoid())
 
         self.loss_cls = build_loss(loss_cls)
