@@ -7,11 +7,22 @@ Our proposed method reached the __1st__ place in ICCV-2019 Person in Context Cha
 ![](../master/framework.png)
 
 ---
+
+**Update #1**: A new branch (pytorch-1.5.0) is created, with some bugs fixed. The branch will be easier to use. p.s. you will still see a warning on missing keys (e.g., sa.g.conv.bias), and I did not solve it yet but will try to figure it out later.
+
+**Update #2**: The score of our model (i.e., 66.04%) on HOIW reported in our paper is obtained by an ensemble of multiple models. Here I only provided the best single model that I have, so it is reasonable that the model does not deliver a close score. I am running the evaluation on HOIW test set, and expect to report my performance for reference this week (hopefully 02.09.2022).
+
+
 ## Prerequisites
 This implementation is based on [mmdetection](https://github.com/open-mmlab/mmdetection). Please follow [INSTALL.md](https://github.com/open-mmlab/mmdetection/blob/v1.0rc0/INSTALL.md) for installation.
 
+The code will work for pytorch=1.5.0, mmdet=1.0rc0+65c1842, and mmcv=0.4.3. 
+
+If you encounter problems on *.so files (e.g., undefined symbol in *.so), please try to delete all existing *.so files and rebuild mmdet. 
+
 ## Prepare Dataset
-For now, we only provide pre-trained weights for [PIC v2.0](http://picdataset.com/challenge/dataset/download/) and [HOIW](http://picdataset.com/challenge/dataset/download/) datasets. Please download these two datasets first.
+
+Please find the dataset from the PIC challenge website: [http://picdataset.com:8000/challenge/task/download/](http://picdataset.com:8000/challenge/task/download/)
 
 Please download converted json files from [google drive](https://drive.google.com/file/d/1hjED1c0E3JWGn8MijpHrVmAs_gFxQew8/view?usp=sharing), and put them in the top-most directory.
 
@@ -32,6 +43,17 @@ Results on PIC and HOIW datasets are also provided.
 
 ## Citation
 ```
+@article{zhou2021cascaded,
+  title={Cascaded parsing of human-object interaction recognition},
+  author={Zhou, Tianfei and Qi, Siyuan and Wang, Wenguan and Shen, Jianbing and Zhu, Song-Chun},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  volume={44},
+  number={6},
+  pages={2827--2840},
+  year={2021},
+  publisher={IEEE}
+}
+
 @inproceedings{zhou2020cascaded,
   title={Cascaded human-object interaction recognition},
   author={Zhou, Tianfei and Wang, Wenguan and Qi, Siyuan and Ling, Haibin and Shen, Jianbing},
