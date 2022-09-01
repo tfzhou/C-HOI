@@ -10,7 +10,7 @@ Our proposed method reached the __1st__ place in ICCV-2019 Person in Context Cha
 
 **Update #1**: A new branch (pytorch-1.5.0) is created, with some bugs fixed. The branch will be easier to use. p.s. you will still see a warning on missing keys (e.g., sa.g.conv.bias), and I did not solve it yet but will try to figure it out later.
 
-**Update #2**: The score of our model (i.e., 66.04%) on HOIW reported in our paper is obtained by an ensemble of multiple models. Here I only provided the best single model that I have, so it is reasonable that the model does not deliver a close score. I am running the evaluation on HOIW test set, and expect to report my performance for reference this week (hopefully 02.09.2022).
+**Update #2**: The score of our model (i.e., 66.04%) on HOIW reported in our paper is obtained by an ensemble of multiple models. Here I only provided the best single model that I have, so it is reasonable that the model does not deliver a similar score. I am running the evaluation on HOIW test set, and expect to report my performance for reference this week (hopefully 02.09.2022).
 
 
 ## Prerequisites
