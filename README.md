@@ -26,7 +26,9 @@ If you encounter problems on *.so files (e.g., undefined symbol in *.so), please
 
 Please find the dataset from the PIC challenge website: [http://picdataset.com:8000/challenge/task/download/](http://picdataset.com:8000/challenge/task/download/)
 
-For the test-set annotation and evaluation, please refer to [https://drive.google.com/drive/folders/15xrIt-biSmE9hEJ2W6lWlUmdDmhatjKt](https://drive.google.com/drive/folders/15xrIt-biSmE9hEJ2W6lWlUmdDmhatjKt) and [https://github.com/YueLiao/PIC_HOIW](https://github.com/YueLiao/PIC_HOIW). I'd like thank to @zgplvyou for sharing me the links.
+For the test-set annotation and evaluation, please refer to [https://drive.google.com/drive/folders/15xrIt-biSmE9hEJ2W6lWlUmdDmhatjKt](https://drive.google.com/drive/folders/15xrIt-biSmE9hEJ2W6lWlUmdDmhatjKt) and [https://github.com/YueLiao/PIC_HOIW](https://github.com/YueLiao/PIC_HOIW). 
+
+**I'd like to thank @zgplvyou for sharing me the links.**
 
 Please download converted json files from [google drive](https://drive.google.com/file/d/1hjED1c0E3JWGn8MijpHrVmAs_gFxQew8/view?usp=sharing), and put them in the top-most directory.
 
